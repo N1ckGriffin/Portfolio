@@ -37,7 +37,6 @@ const ContactSection = () => {
       ...prev,
       [name]: value
     }));
-    // Clear error when user starts typing
     if (errors[name]) {
       setErrors(prev => ({
         ...prev,
@@ -47,12 +46,15 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-slate-50">
-      <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-slate-800 mb-4">
+    <section 
+      id="contact" 
+      className="bg-slate-800 scroll-mt-[52px] min-h-[calc(100vh-52px)] -mb-[52px]"
+    >
+      <div className="max-w-4xl mx-auto px-4 py-20 w-full">
+        <h2 className="text-3xl font-bold text-center text-white mb-4">
           Contact Me
         </h2>
-        <p className="text-center text-slate-600 mb-12">
+        <p className="text-center text-slate-300 mb-12">
           Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.
         </p>
 
@@ -64,12 +66,12 @@ const ContactSection = () => {
               placeholder="Name"
               value={formData.name}
               onChange={handleChange}
-              className={`w-full px-4 py-2 rounded-lg border ${
-                errors.name ? 'border-red-500' : 'border-slate-300'
-              } focus:outline-none focus:ring-2 focus:ring-blue-500`}
+              className={`w-full px-4 py-2 rounded-lg bg-slate-700 text-white placeholder:text-slate-400 border ${
+                errors.name ? 'border-red-500' : 'border-slate-600'
+              } focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
             />
             {errors.name && (
-              <p className="mt-1 text-red-500 text-sm">{errors.name}</p>
+              <p className="mt-1 text-red-400 text-sm">{errors.name}</p>
             )}
           </div>
 
@@ -80,12 +82,12 @@ const ContactSection = () => {
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
-              className={`w-full px-4 py-2 rounded-lg border ${
-                errors.email ? 'border-red-500' : 'border-slate-300'
-              } focus:outline-none focus:ring-2 focus:ring-blue-500`}
+              className={`w-full px-4 py-2 rounded-lg bg-slate-700 text-white placeholder:text-slate-400 border ${
+                errors.email ? 'border-red-500' : 'border-slate-600'
+              } focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
             />
             {errors.email && (
-              <p className="mt-1 text-red-500 text-sm">{errors.email}</p>
+              <p className="mt-1 text-red-400 text-sm">{errors.email}</p>
             )}
           </div>
 
@@ -96,29 +98,29 @@ const ContactSection = () => {
               value={formData.message}
               onChange={handleChange}
               rows="5"
-              className={`w-full px-4 py-2 rounded-lg border ${
-                errors.message ? 'border-red-500' : 'border-slate-300'
-              } focus:outline-none focus:ring-2 focus:ring-blue-500`}
+              className={`w-full px-4 py-2 rounded-lg bg-slate-700 text-white placeholder:text-slate-400 border ${
+                errors.message ? 'border-red-500' : 'border-slate-600'
+              } focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
             />
             {errors.message && (
-              <p className="mt-1 text-red-500 text-sm">{errors.message}</p>
+              <p className="mt-1 text-red-400 text-sm">{errors.message}</p>
             )}
           </div>
 
           <button
             type="submit"
             className="w-full sm:w-auto px-8 py-3 bg-blue-500 text-white rounded-lg
-                     hover:bg-blue-600 transition-colors font-medium"
+                     hover:bg-blue-600 transition-colors duration-300 font-medium"
           >
             Send Message
           </button>
         </form>
 
         {/* Social Links */}
-        <div className="flex justify-center items-center gap-8 pt-8 border-t border-slate-200">
+        <div className="flex justify-center items-center gap-8 pt-8 border-t border-slate-600">
           <a
             href="mailto:your.email@example.com"
-            className="text-slate-600 hover:text-blue-500 transition-colors"
+            className="text-slate-300 hover:text-blue-400 transition-colors duration-300"
           >
             <Mail size={24} />
           </a>
@@ -126,7 +128,7 @@ const ContactSection = () => {
             href="https://github.com/yourusername"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-600 hover:text-blue-500 transition-colors"
+            className="text-slate-300 hover:text-blue-400 transition-colors duration-300"
           >
             <Github size={24} />
           </a>
@@ -134,7 +136,7 @@ const ContactSection = () => {
             href="https://linkedin.com/in/yourusername"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-600 hover:text-blue-500 transition-colors"
+            className="text-slate-300 hover:text-blue-400 transition-colors duration-300"
           >
             <Linkedin size={24} />
           </a>

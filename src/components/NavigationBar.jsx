@@ -41,9 +41,9 @@ const NavigationBar = () => {
       <nav
         ref={navRef}
         id="nav"
-        className={`w-full bg-slate-900 shadow-md transition-all duration-300 z-50 h-[52px] flex items-center ${
-          isFixed ? 'fixed top-0 left-0 right-0' : 'relative'
-        }`}
+        className={`w-full bg-slate-900 shadow-lg transition-all duration-300 z-50 h-[52px] flex items-center
+          ${isFixed ? 'fixed top-0 left-0 right-0' : 'relative'}
+        `}
       >
         <div className="max-w-6xl mx-auto px-4 w-full">
           <ul className="flex justify-center space-x-8">
@@ -83,14 +83,17 @@ const NavigationBar = () => {
 };
 
 const NavigationItem = ({ id, href, active, children }) => (
-  <div
-    id={id}
-    className={`navigation__item text-gray-300 hover:text-blue-400 transition-colors duration-200 ${
-      active ? 'text-blue-400 font-medium' : ''
-    }`}
-  >
-    <a href={href}>{children}</a>
-  </div>
+  <li>
+    <a
+      id={id}
+      href={href}
+      className={`text-slate-300 hover:text-blue-400 transition-colors duration-300 ${
+        active ? 'text-blue-400 font-medium' : ''
+      }`}
+    >
+      {children}
+    </a>
+  </li>
 );
 
 export default NavigationBar;

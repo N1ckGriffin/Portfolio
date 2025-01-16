@@ -39,7 +39,9 @@ const AboutSection = () => {
           className="w-14 h-14 object-contain"
         />
       </div>
-      <span className="mt-3 text-base text-slate-300">{skill.name}</span>
+      <span className="mt-3 text-base text-slate-300">
+        {skill.name}
+      </span>
     </div>
   );
 
