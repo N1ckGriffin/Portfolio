@@ -9,6 +9,7 @@ import nodejs from '../images/tech/nodejs.svg';
 import python from '../images/tech/python.svg';
 import r from '../images/tech/r.svg';
 import react from '../images/tech/react.svg';
+import profile from '../images/profile.svg';
 
 const AboutSection = () => {
   const columnOne = [
@@ -56,16 +57,18 @@ const AboutSection = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-16">
-          <div className="space-y-8">
-            <div className="aspect-square w-56 mx-auto md:mx-0 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full" />
+        <div className="space-y-8">
+            <div className="aspect-square w-56 mx-auto md:mx-0 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full relative">
+                <img 
+                src={profile} 
+                alt="Profile"
+                className="absolute inset-0 w-full h-full p-8"
+                />
+            </div>
             <p className="text-slate-300 text-lg leading-relaxed">
-              A passionate front end developer with a deep interest in creating
-              intuitive and efficient web applications. I bring a strong foundation
-              in modern web technologies and a keen eye for design to every project
-              I undertake.
+                A passionate front end developer...
             </p>
-          </div>
-
+            </div>
           <div className="grid grid-cols-3 gap-6 items-start justify-items-center">
             <div className="flex flex-col items-center mt-8">
               {columnOne.map((skill) => (
