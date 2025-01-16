@@ -8,7 +8,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "npx tailwindcss -i ./src/styles/main.css -o ./public/styles.css --watch"
+    "dev": "npx tailwindcss -i ./src/styles/main.css -o ./public/styles.css --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "repository": {
     "type": "git",
@@ -20,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/N1ckGriffin/Portfolio/issues"
   },
-  "homepage": "/",
+  "homepage": "https://github.com/N1ckGriffin/Portfolio",
   "description": "",
   "dependencies": {
     "autoprefixer": "^10.4.20",
@@ -31,6 +34,7 @@
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^3.4.17"
   },
   "eslintConfig": {
