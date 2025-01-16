@@ -1,7 +1,8 @@
 import React from 'react';
 import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
 import NavigationBar from './components/NavigationBar';
+import AboutSection from './components/AboutSection';
+import ProjectsSection from './components/ProjectsSection';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <NavigationBar />
       </div>
       <AboutSection />
+      <ProjectsSection />
     </>
   );
 }
