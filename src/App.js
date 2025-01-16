@@ -1,22 +1,21 @@
 import React from 'react';
-import HeroSection from './components/HeroSection';
 import NavigationBar from './components/NavigationBar';
+import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ProjectsSection from './components/ProjectsSection';
 import ContactSection from './components/ContactSection';
+import './index.css';
 
-function App() {
+const App = () => {
   return (
-    <>
+    <div>
       <HeroSection />
-      <div className="bg-white">
-        <NavigationBar />
-      </div>
+      <NavigationBar />
       <AboutSection />
       <ProjectsSection />
       <ContactSection />
-    </>
+    </div>
   );
-}
+};
 
 export default App;
