@@ -30,8 +30,11 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="min-h-screen flex items-center bg-slate-800 scroll-mt-[52px]">
-      <div className="max-w-6xl mx-auto px-4 py-20 w-full">
+    <section 
+      id="projects" 
+      className="bg-slate-800 scroll-mt-[52px]"
+    >
+      <div className="max-w-6xl mx-auto px-4 py-16 w-full">
         <h2 className="text-4xl font-bold text-center text-white mb-12">
           Projects
         </h2>

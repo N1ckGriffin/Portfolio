@@ -48,9 +48,9 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center bg-slate-800 scroll-mt-[52px]"
+      className="bg-slate-800 scroll-mt-[52px]"
     >
-      <div className="max-w-6xl mx-auto px-4 w-full">
+      <div className="max-w-6xl mx-auto px-4 py-16 w-full">
         <h2 className="text-4xl font-bold text-center text-white mb-16">
           About Me
         </h2>
