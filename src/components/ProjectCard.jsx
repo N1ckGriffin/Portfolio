@@ -9,7 +9,7 @@ const ProjectCard = ({ title, description, imageUrl, liveLink, codeLink, imageOn
       {/* Project Info */}
       <div className={`w-full md:w-1/2 ${contentOrder}`}>
         <h3 className="text-2xl font-bold text-white mb-4">{title}</h3>
-        <p className="text-slate-300 mb-6">{description}</p>
+        <p className="whitespace-pre-line text-gray-300 mb-8">{description}</p>
         <div className="flex gap-4">
           <a
             href={liveLink}
