@@ -12,25 +12,24 @@ const NavigationBar = () => {
         const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
         setIsFixed(window.scrollY >= heroBottom);
       }
-
-      // Track active section
+  
       const sections = ['hero', 'about', 'projects', 'contact'];
-      const scrollPosition = window.scrollY;
-
+      const scrollPosition = window.scrollY + window.innerHeight / 2; // Track middle of viewport
+  
       for (const sectionId of sections) {
         const section = document.getElementById(sectionId);
         if (section) {
           const sectionTop = section.offsetTop;
-          const sectionHeight = section.offsetHeight;
-
-          if (scrollPosition >= sectionTop - 100 && scrollPosition < sectionTop + sectionHeight - 100) {
+          const sectionBottom = sectionTop + section.offsetHeight;
+  
+          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
             setActiveSection(sectionId);
             break;
           }
         }
       }
     };
-
+  
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);

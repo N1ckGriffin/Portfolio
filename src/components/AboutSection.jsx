@@ -64,7 +64,7 @@ const AboutSection = () => {
               />
             </div>
             <p className="text-slate-300 text-lg leading-relaxed text-left">
-            Fully committed to the idea of lifelong learning, I'm a software developer with a deep passion to create intuitive and engaging 
+            Fully committed to the philosophy of lifelong learning, I'm a software developer with a deep passion to create intuitive and engaging 
             frontend experiences, build robust and efficient backend systems, and leverage data science to uncover insights and drive data-informed decisions. When I'm 
             not working I like to spend my time keeping fit, reading, talking sports and film, traveling, and experiencing new things. 
             </p>
