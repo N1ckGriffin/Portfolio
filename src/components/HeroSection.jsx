@@ -15,7 +15,7 @@ const HeroSection = () => {
         </h1>
 
         <h2 className="text-xl md:text-2xl text-slate-300 mb-12">
-          I'm an aspiring software developer.
+          I'm a full-stack software developer.
         </h2>
 
         <a
