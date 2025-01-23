@@ -18,7 +18,7 @@ External APIs: Google OAuth 2.0`,
     },
     {
       title: 'Full-stack E-commerce Web Application',
-      description: `Full-stack e-commerce application developed with a team using agile methodology. Features user interfaces for managers, cashiers, and customers.
+      description: `User friendly and accessible e-commerce software developed with a team using agile methodology. Features user interfaces for managers, cashiers, and customers.
 
 Frontend: React, Tailwind CSS, JavaScript
 Backend: Express.js, Node.js, Sequelize, PostgreSQL, JavaScript
