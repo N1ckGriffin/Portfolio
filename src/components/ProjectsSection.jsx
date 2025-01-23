@@ -13,8 +13,8 @@ Frontend: Vue.js, Vue Router, CSS3
 Backend: Express.js, Node.js, MongoDB, Mongoose
 External APIs: Google OAuth 2.0`,
       imageUrl: productivityApp,
-      liveLink: 'https://nicholas-griffin-portfolio.vercel.app/',
-      codeLink: 'https://github.com/yourusername/productivity-app',
+      liveLink: 'https://productivity-app-nicholas-griffin.vercel.app/',
+      codeLink: 'https://github.com/N1ckGriffin/ProductivityApp',
     },
     {
       title: 'Full-stack E-commerce Web Application',
