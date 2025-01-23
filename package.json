@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/N1ckGriffin/Portfolio/issues"
   },
-  "homepage": "https://N1ckGriffin.github.io/Portfolio",
+  "homepage": "https://nicholas-griffin-portfolio.vercel.app/",
   "description": "",
   "dependencies": {
     "autoprefixer": "^10.4.20",
